@@ -78,8 +78,6 @@ function captureButtonCallback() {
       type: 'gif',
       frameRate: 1,
       quality: 10,
-      width: 390,
-      height: 270,
       onGifRecordingStarted: () => {
         console.log('Empezo a grabar');
       }
