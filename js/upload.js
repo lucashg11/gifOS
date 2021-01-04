@@ -60,10 +60,7 @@ buttonStart.addEventListener('mousedown', () => {
 function getStreamAndRecord() {
   navigator.mediaDevices.getUserMedia({
     audio: false,
-    video: {
-      height: { max: 434, exact: 434 },
-      width: { max: 838, exact: 838 },
-    }
+    video: true
   })
     .then(function (cameraResponse) {
       stream = cameraResponse;
